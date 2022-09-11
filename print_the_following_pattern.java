@@ -1,17 +1,19 @@
-import java.util.Scanner;
-class Sample
+import java.util.*;
+class Pattern
 {
-    public static void main(String[] args)
+    public static void main(String args[])
     {
-        Scanner cs=new Scanner(System.in);
-        int row_size,out,in;
-        row_size=cs.nextInt();
-        for(out=row_size;out>=1;out--)
+        int i,j,n;
+        Scanner sc=new Scanner(System.in);
+        //System.out.println(5);
+        n=sc.nextInt();
+        for(i=1;i<=n;i++)
         {
-            for(in=row_size;in>=1;in--)
-            System.out.print(in+" ");
-            System.out.println();
+            for(j=1;j<=n;j++)
+            {
+                System.out.print((char)(i+64)+" ");
+            }
+        System.out.println();
         }
-        cs.close();
     }
 }
