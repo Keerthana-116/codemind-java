@@ -1,19 +1,20 @@
-import java.util.*;
-class Pattern
+import java.util.Scanner;
+class Sample
 {
-    public static void main(String args[])
+    public static void main(String[] args)
     {
-        int i,j,n;
         Scanner sc=new Scanner(System.in);
-        //System.out.println(5);
-        n=sc.nextInt();
-        for(i=1;i<=n;i++)
+        int n=sc.nextInt();
+        System.out.print("");
+        for(int i=1;i<=n;i++)
         {
-            for(j=1;j<=n;j++)
+            for (int j=1;j<=i;j++)
             {
-                System.out.print((char)(i+64)+" ");
+               System.out.print(j+""); 
             }
-        System.out.println();
+            
+            System.out.println();
         }
+        sc.close();
     }
 }
