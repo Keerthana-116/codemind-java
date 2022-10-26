@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class Sample
+class Demo5
 {
 	public static void main(String args[])
 	{
@@ -16,5 +16,3 @@ class Sample
 		sc.close();	
 	}
 }
-
-
