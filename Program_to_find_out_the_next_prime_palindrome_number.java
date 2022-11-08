@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 class Sample
 {
@@ -10,9 +11,9 @@ class Sample
               count++;
         }
         if(count==0)
-          return true;
+           return true;
         else
-          return false;
+           return false;
     }
     public static boolean isPalindrome(int n)
     {
@@ -25,22 +26,22 @@ class Sample
             n=n/10;
         }
         if(temp==sum)
-           return true;
-        else 
-           return false;
-    }
-    public static void main(String args[])
-    {
-        Scanner sc=new Scanner(System.in);
-        int n,i;
-        n=sc.nextInt();
-        for(i=n+1;;i++)
+             return true;
+        else
+             return false;
+        }
+        public static void main(String args[])
         {
-            if(isPrime(i) && isPalindrome(i))
+            Scanner sc=new Scanner(System.in);
+            int n,i;
+            n=sc.nextInt();
+            for(i=n+1;;i++)
             {
-                System.out.println(i);
-                break;
+                if(isPrime(i) && isPalindrome(i))
+                {
+                    System.out.println(i);
+                    break;
+                }
             }
         }
-    }
 }
